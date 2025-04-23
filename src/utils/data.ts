@@ -6,16 +6,16 @@ const services = [
         icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none"
         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
         class="w-6 h-6">
-<!-- clipboard top tab -->
-<path stroke-linecap="round" stroke-linejoin="round"
-     d="M9 2.25h6c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125H9A1.125 1.125 0 017.875 4.875v-1.5C7.875 2.754 8.379 2.25 9 2.25z"/>
-<!-- clipboard body -->
-<path stroke-linecap="round" stroke-linejoin="round"
-     d="M4.5 6.75h15a1.5 1.5 0 011.5 1.5v12a1.5 1.5 0 01-1.5 1.5h-15a1.5 1.5 0 01-1.5-1.5v-12a1.5 1.5 0 011.5-1.5z"/>
-<!-- checkmark -->
-<path stroke-linecap="round" stroke-linejoin="round"
-     d="M9 12l2 2 4-4"/>
-</svg>`
+        <!-- clipboard top tab -->
+        <path stroke-linecap="round" stroke-linejoin="round"
+            d="M9 2.25h6c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125H9A1.125 1.125 0 017.875 4.875v-1.5C7.875 2.754 8.379 2.25 9 2.25z"/>
+        <!-- clipboard body -->
+        <path stroke-linecap="round" stroke-linejoin="round"
+            d="M4.5 6.75h15a1.5 1.5 0 011.5 1.5v12a1.5 1.5 0 01-1.5 1.5h-15a1.5 1.5 0 01-1.5-1.5v-12a1.5 1.5 0 011.5-1.5z"/>
+        <!-- checkmark -->
+        <path stroke-linecap="round" stroke-linejoin="round"
+            d="M9 12l2 2 4-4"/>
+        </svg>`
 
     },
     {
