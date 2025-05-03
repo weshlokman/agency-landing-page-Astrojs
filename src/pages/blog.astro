@@ -1,0 +1,71 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Container from "../components/shared/Container.astro";
+import Title from "../components/shared/Title.astro";
+import Paragraph from "../components/shared/Paragraph.astro";
+
+const posts = [
+  {
+    title: "How to Sell on TikTok Shop USA Without U.S. Citizenship",
+    description: "Step-by-step guide for creators and international brands.",
+    slug: "how-to-sell-on-tiktok-shop",
+    date: "May 2, 2025",
+    readTime: "3 min",
+    category: "TikTok Shop",
+    image: "/images/tiktokcanadaban.webp"
+  }
+//   {
+//     title: "TikTok Shop Verification Explained: LLC, EIN, and U.S. Rep",
+//     description: "Everything you need to know about verifying your TikTok Shop account as an international seller.",
+//     slug: "tiktok-shop-verification",
+//     date: "April 17, 2025",
+//     readTime: "6 min",
+//     category: "Compliance",
+//     image: "/images/dev-with-c-1.webp"
+//   },
+//   {
+//     title: "Why Creators Should Start a TikTok Shop (Even Without a U.S. Account)",
+//     description: "How creators abroad can monetize on TikTok with their own shop setup.",
+//     slug: "tiktok-shop-for-creators",
+//     date: "April 10, 2025",
+//     readTime: "4 min",
+//     category: "Creators",
+//     image: "/images/blog3.jpg"
+//   },
+];
+---
+
+<Layout title="Blog">
+
+<section id="blog" class="relative pt-32 lg:pt-36 pb-20 mb-0"> <!-- add pb-20 (or pb-24) -->
+      <Container class="space-y-16">
+        <div class="text-center max-w-2xl mx-auto space-y-4">
+          <Title>All Blog Posts</Title>
+          <Paragraph>Explore guides, insights, and TikTok Shop strategies.</Paragraph>
+        </div>
+  
+        <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto mt-10">
+          {posts.map((post) => (
+            <div class="bg-box-bg border border-box-border rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
+              <a href={`/blog/${post.slug}`}>
+                <img src={post.image} alt={post.title} class="w-full h-56 object-cover" />
+              </a>
+              <div class="p-6 space-y-3">
+                <a href={`/blog/${post.slug}`}>
+                  <h3 class="text-2xl font-bold text-heading-1 hover:underline">{post.title}</h3>
+                </a>
+                <div class="text-sm text-heading-3 flex flex-wrap gap-2">
+                  <span>{post.date}</span><span>•</span><span>{post.readTime}</span><span>•</span><span>{post.category}</span>
+                </div>
+                <p class="text-sm text-body">{post.description}</p>
+                <a href={`/blog/${post.slug}`} class="text-primary font-medium text-sm hover:underline inline-block mt-2">
+                  Read more →
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </Container>
+    </section>
+  </Layout>
+  
