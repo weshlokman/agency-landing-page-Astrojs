@@ -7,7 +7,6 @@ const articleData = {
   category: "Cross-Border E-Commerce",
   date: "October 4, 2025",
   readTime: "4 min",
-  image: "/images/tiktok-shop-illustration.webp",
   description: "TikTok Shop isn’t live in Canada yet — but smart brands sell through the U.S. Here’s how to launch, register, and start scaling fast."
 };
 ---
@@ -16,11 +15,6 @@ const articleData = {
   <article class="pt-[4rem] pb-16 md:pt-[6rem] md:pb-24 bg-body min-h-screen scroll-mt-header">
     <Container>
       <div class="max-w-3xl mx-auto">
-        <img
-          src={articleData.image}
-          alt={articleData.title}
-          class="w-full h-[400px] object-cover rounded-xl shadow-md mb-10" />
-
         <h1 class="text-4xl font-bold text-heading-1 mb-4">{articleData.title}</h1>
         <p class="text-heading-3 mb-8 flex flex-wrap gap-2">
           <span>{articleData.date}</span><span>•</span><span>{articleData.readTime}</span><span>•</span><span>{articleData.category}</span>
